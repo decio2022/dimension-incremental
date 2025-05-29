@@ -1163,6 +1163,8 @@ function getStatHTML(){
     if (buyableShow(2,4)) output = output + `x<b>` + format(buyableEffect(2,4),4) + `</b> (Line Buyable 4 effect)<br>`
     output = output + `Total gain exponent: <b>` + format(getPointsGainExp(),4) + `</b><br><br>`
     output = output + `Overall points gain: <b>` + format(getPointsGainMulti()) + `<sup>` + format(getPointsGainExp(),4) +`</sup></b> = <b>` + format(getPointsGain()) + `</b><br><br>`
+    output = output + layerNameGenerate() + "<br><br>"
+    //output = output + familyGuyGenerate()
     return output
 }
 
